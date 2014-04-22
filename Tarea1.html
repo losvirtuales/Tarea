@@ -9,7 +9,9 @@
 
 	
 	<header>
-
+		<nav>
+			Aqui va el menu de navegacion
+		</nav>
 	</header>
 
 	<section>
@@ -169,9 +171,38 @@
 
 
 	</section>
+	
+
+	<h1>Esto es de Super  Jonhy =P</h1><br/>
+	<section>
+		<article>
+			En una seccion se pueden poner varios articulos
+		</article>
+		<article>
+			Articulo 2
+		</article>
+		<h1>Eti. h1 para letra grande</h1>
+		<h2>Un poco mas chica</h2>
+		<h3>Mas</h3>
+		<h4>Mas</h4>
+		<h5>Mas</h5>
+		<h6>Lo mas pequeño</h6>
+		<br/>
+		<p>La etiqueta address para contacto</p>
+		<address>
+			Parte de <a href="mailto:jonhyrowing@hotmail.com">Jonhy</a>.<br> 
+		 	Facebook: SirHoney<br>
+			Mi casa 564, Disneyland<br>
+			Tepito :P
+		</address>
+		<br/>
+		<main>
+			El main se supone contiene elementos unicos de la pagina que no se repiten.(HTML5)
+		</main>
+	</section>
 
 	<aside>
-		<h1>Esto es de Super  Jonhy =P</h1><br/>
+		
 		<h2>Etiquetas de Contenido incrustado</h2>
 		<p>etiqueta img para imagenes</p>
 		<img src="./img/chubaca.jpeg"/>
@@ -182,13 +213,124 @@
 		<p>Que no se ve porque necesito algun archivo de pluging :/</p>
 		<br/>
 		<p>Ahora param pasa parametros para el uso de plugins y object</p>
-		<object data="/pluging/horse.wav">
+		<object data="./pluging/horse.wav">
 			<param name="autoplay" value="true"></param>
 		</object>
+		<p>Etiqueta video (HTLM5)</p>
+		<video width="320" height="240" controls>
+ 			 <source href="https://www.youtube.com/watch?v=dU26cGlmkRg" type="video/webm"></source>
+		</video>
+		<p>Etiqueta de audio(HTML5)</p>
+		<audio controls>
+			<source src="./pluging/horse.wav" type="audio/wav"></source>
+		</audio>
+	
+		<p>Source es la etiqueta que se utilizo para todas las anteriores, nos permite agregar la funte del archivo(HTML5)</p>
+		<br/>
+		<p>Canvas (HTML5)</p>
+		<canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+			Your browser does not support the HTML5 canvas tag.
+		</canvas>
+			
+			<p>Map y area </p>
+		<img src="./img/planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap">
+		<map name="planetmap">
+  			<area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm">
+  			<area shape="circle" coords="90,58,3" alt="Mercury" href="mercur.htm">
+  			<area shape="circle" coords="124,58,8" alt="Venus" href="venus.htm">
+		</map>
+		
+		<p>svg (HTML5)</p>
+		
+		<svg width="100" height="100">
+   			<circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+		</svg> 
+
+		<h2>Formularios</h2>
+		<form action="#" id="Diste click y legend te muestra esto =P">
+			<p>Fieldset</p>
+			<fieldset  name="personalia">
+				<legend id="myLegend"></legend>
+  				Nmbre: <input type="text" name="username"><br>
+  				Correo: <input type="text" name="usermail"><br>
+			</fieldset>
+			<button type="button" onclick="form.personalia.style.backgroundColor='green'">Change background color of fieldset</button>
+			<input type="submit">
+			<p id="demo"></p>
+				
+
+			<label for="input">Esta es una etiqueta</label>
+			<input type="text" id="input" placeholder="Este es un Input">
+			<button onclick=""alert('Me clickeaste =P')"">Boton, Clickeame</button>
+			<br/>
+			<br/>
+			<select id="mySelect" size="4">
+  				<option>Select</option>
+  				<option>y Option</option>
+  				<option>aaaa</option>
+  				<option>Que Sueñoo</option>
+			</select>
+				<br/>
+			<textarea name="Areadetexto" id="area" cols="30" rows="10" placeholder="Escribe, estoes unarea de texto"></textarea>
+			<br/>
+		</form>
+
+		<button onclick="myFunction()">Legend</button>
+
+			<script>
+				function myFunction()
+				{
+					var x = document.getElementById("myLegend").form.id;
+					document.getElementById("demo").innerHTML=x;
+				}
+			</script>
+		
+			<br/>
+			<br/>
+			<br/>
+			<p>Keygen(HTML5)</p>
+		<form action="demo_keygen.asp">
+				Username: <input type="text" name="usr_name">
+  				Encryption: <keygen name="security" keytype="rsa">
+  				<input type="submit">
+			<br/>
+		</form>
+
+		<br/>
+
+		<p>Este es output(HTML5)</p>
+		<form action="demo_form.asp" id="numform" oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+		<input type="range" id="a" name="a" value="50">100+<input type="number" id="b" name="b" value="50">
+		<br><br>
+		</form>
+		<output form="numform" name="x" for="a b"></output>
+		<br/>
+
+		<br/>
+		<p>Este esta padre es progress(HTML5)</p>
+		<progress value="78" max="100"></progress>
+		<br/>
+		<br/>
+		
+		<p>Este es meter parecido al anterior (HTML5)</p>
+		<meter value="5" min="0" max="10">5 de 10</meter><br>
+		<br/>
+		<br/>
+		<details>
+			Etiqueta details, se colocan detalles sobre los programas (HTML5)
+		</details>
+		<summary>Copyright 1999-2011.
+				Define un encabezado para details (HTML5)
+		</summary>
+			
+			<br/>
+		<p>Hay otras dos etiquetas que son comamand que solo es soportado en IE9 y menu, que contiene a los command.</p>
+
 
 	</aside>
-
+		
 	<footer>
+		En el footer se ponen cosas como, bolsa de trabajo, links a facebook y twitter, contacto, politicas, etc.
 	</footer>
 
 
