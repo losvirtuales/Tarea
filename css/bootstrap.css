@@ -5118,7 +5118,7 @@ button.close {
 }
 .modal-content {
   position: relative;
-  background-color:black;
+  background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #999;
   border: 1px solid rgba(0, 0, 0, .2);
@@ -5138,7 +5138,7 @@ button.close {
 }
 .modal-backdrop.fade {
   filter: alpha(opacity=0);
-  opacity: .5;
+  opacity: 0;
 }
 .modal-backdrop.in {
   filter: alpha(opacity=50);
@@ -5783,3 +5783,33 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
+/*---------------Mis modificaciones----------------*/
+header{
+  
+  background-repeat:  no-repeat;
+  background-image: url("./recursos/cabecera.png");
+  height:  250px; 
+}
+.inner{
+  background-color: #0099FF;
+}
+
+ul li a{
+  text-decoration: none;
+  color:white;
+}
+
+div h1{
+  color: #0099FF;
+}
+
+div h3{
+  color:#7093DB ;
+}
+.modal-header{
+  color: #0099FF;
+}
+.modal-body{
+  color:#7093DB ;
+}
